@@ -67,11 +67,7 @@ namespace WinFormsApp_exchange
             KucoinSymbols();
             BitgetSymbols();
             BybitSymbols();
-        }
-
-        private async Task Bitget_get_filters()
-        {
-            
+            b1();
         }
 
         private async Task b1()
@@ -164,10 +160,6 @@ namespace WinFormsApp_exchange
                     Console.WriteLine($"Произошло исключение в StartBybitLoop: {ex.Message}");
                 }
             }
-        }
-        private void button2_Click(object sender, EventArgs e)
-        {
-            b1();
         }
     }
 }
